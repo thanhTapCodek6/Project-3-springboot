@@ -1,14 +1,16 @@
 package vn.nhutthanh;
 
 import org.springframework.boot.SpringApplication;
-import org.springframework.boot.web.servlet.FilterRegistrationBean;
+
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.core.Ordered;
 import org.springframework.core.annotation.Order;
 import org.springframework.web.filter.CharacterEncodingFilter;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+
 import vn.nhutthanh.configs.CustomSiteMeshFilter;
+import org.springframework.boot.web.servlet.FilterRegistrationBean;
 
 @SpringBootApplication
 @Configuration
