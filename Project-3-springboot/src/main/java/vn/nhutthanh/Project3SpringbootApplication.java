@@ -9,8 +9,7 @@ import org.springframework.core.annotation.Order;
 import org.springframework.web.filter.CharacterEncodingFilter;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-import vn.nhutthanh.configs.CustomSiteMeshFilter;
-import org.springframework.boot.web.servlet.FilterRegistrationBean;
+
 
 @SpringBootApplication
 @Configuration
@@ -20,19 +19,7 @@ public class Project3SpringbootApplication {
 		SpringApplication.run(Project3SpringbootApplication.class, args);
 	}
 
-	@Bean
-
-	FilterRegistrationBean<CustomSiteMeshFilter> siteMeshFilter() {
-
-		FilterRegistrationBean<CustomSiteMeshFilter> filterRegistrationBean = new FilterRegistrationBean<CustomSiteMeshFilter>();
-
-		filterRegistrationBean.setFilter(new CustomSiteMeshFilter()); // adding sitemesh filter ??
-
-		filterRegistrationBean.addUrlPatterns("/*");
-
-		return filterRegistrationBean;
-
-	}
+	
 
 	@Bean
 
